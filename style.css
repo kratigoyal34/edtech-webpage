@@ -1,0 +1,469 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(242,247,255);
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 40px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    color: #00758c;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+}
+
+.navbar .container{
+    margin: 0px;
+}
+
+.navbar .container ul{
+    display: flex;
+}
+
+.navbar .container ul li{
+    color: black;
+    list-style: none;
+    padding: 0px 13px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar .container ul li a{
+    text-decoration: none;
+}
+
+.navbar .container ul li a:hover{
+    border-bottom: 2px solid #00758c;
+}
+
+.navbar .container .icon a: hover{
+    border: none;
+}
+/* carosol */
+.carosol{
+    background-image: linear-gradient(rgba(1,7,8,0.6),rgba(1,7,8,0.6)),url('images/edtech.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    width: 100%;
+}
+
+.carosol-item{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.carosol p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.carosol h1{
+    font-size: 42px;
+    font-weight: 600;
+    margin: 7px;
+}
+
+.carosol .button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #00758c;
+    padding: 8px 10px;
+}
+
+.carosol .button a:hover{
+    background-color: rgb(122, 128, 124);
+}
+
+/* about-us */
+.about-us{
+    margin: 10px 0px;
+}
+
+.about-us .about{
+    display: grid;
+    grid-template-columns: 40% 45%;
+    gap: 5%;
+}
+
+.about-us .about .col-1 {
+    height: 300px;
+    background-image: url('images/laptop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us .about .col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us .about .col-2 h2{
+    color: black;
+    font-weight: 600;
+    padding: 8px 0px;
+    font-size: 32px;
+}
+
+.about-us .about .col-2 p{
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.service{
+    width: 100%;
+    margin: 10px 0px;
+}
+.service-section h3{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+}
+
+.service-section h2{
+    color: black;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.service .service-section .service-grid h3{
+    color: black;
+    padding-top: 60%;
+}
+
+.service .service-section .service-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,245px);
+    margin: 10px 0px;
+    gap: 5px;
+}
+
+.service-grid .img1{
+    background: linear-gradient(rgba(169, 170, 176,.4),rgba(169, 170, 176,.7)),url('images/img1.avif');
+}
+
+.service-grid .img2{
+    background: linear-gradient(rgba(169, 170, 176,.4),rgba(169, 170, 176,.7)),url('images/img2.avif');
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.service-grid .img3{
+    background: linear-gradient(rgba(73, 73, 77,.2),rgba(73, 73, 77,.5)),url('images/img3.jpg');
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.service-grid .img4{
+    background: linear-gradient(rgba(73, 73, 77,.2),rgba(73, 73, 77,.5)),url('images/img4.avif');
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.service-grid .img5{
+    background: linear-gradient(rgba(73, 73, 77,.4),rgba(73, 73, 77,.6)),url('images/img5.webp');
+    background-size: cover;
+    opacity: 1;
+}
+
+.service-grid .img6{
+    background: linear-gradient(rgba(73, 73, 77,.2),rgba(73, 73, 77,.5)),url('images/img6.avif');
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* contact us */
+.contact-us h2{
+    color: black;
+    text-align: center;
+    font-size: 32px;
+}
+
+.contact-us .card{
+    display: grid;
+    gap: 10px;
+    width: 40%;
+    justify-content: center;
+    background: rgba(74, 145, 168,.5);
+    padding: 25px 0px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.contact-us .card input[type=text], .contact-us .card input[type=email]{
+    border: none;
+    padding: 8px 10px;
+    margin: 5px 0px;
+    width: 100%;
+    justify-self: center;
+}
+
+.contact-us .card textarea{
+    border: none;
+    padding: 8px 10px;
+    margin: 5px 0px;
+    width: 100%;
+    justify-self: center;
+}
+
+.contact-us .card button{
+    border: none;
+    padding: 11px 0px;
+    width: 112px;
+    justify-self: center;
+    background: #2B38DC;
+    font-weight: 600;
+}
+
+.contact-us .card button:hover{
+    background-color: rgb(105, 122, 207);
+}
+
+.contact-us .card button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(max-width: 933px){
+    .footer-main{
+        grid-gap: 10px;
+    }
+}
+@media(max-width: 849px){
+    .service .service-section .service-grid{
+        grid-template-rows: repeat(2,213px);
+    }
+}
+@media(max-width: 722px){
+    .about-us .about{
+        grid-template-columns: 50% 45%;
+    }
+
+    .service .service-section .service-grid{
+        grid-template-rows: repeat(2,183px);
+    }
+
+    .service .service-section .service-grid h3{
+        padding-top: 69%;
+    }
+}
+
+@media(max-width: 632px){
+    .carosol h1{
+        font-size: 32px;
+        margin: 5px;
+    }
+    .carosol-item{
+        top: 30%;
+    }
+    .service .service-section .service-grid h3{
+        font-size: 16px;
+        padding-top: 79%
+    }
+    .contact-us .card{
+        width: 60%;
+    }
+}
+
+@media(max-width: 558px){
+    .about-us .about .col-2 p{
+        line-height: 1.4;
+    }
+
+    .about-us .about .col-2 h2{
+        padding: 4px 0px;
+    }
+
+    .service .service-section .service-grid{
+        grid-template-rows: repeat(2,167px);
+    }
+
+    .service .service-section .service-grid h3{
+        font-size: 14px;
+        padding-top: 89%;
+    }
+}
+
+ @media(max-width: 500px){
+    .navbar .container ul li{
+        font-size: 14px;
+    }
+
+    .carosol h1{
+        font-size: 30px;
+        margin: 7px;
+    }
+
+    .about-us .about .col-1{
+        height: 260px;
+    }
+
+    .about-us .about .col-2 p{
+        font-size: 16px;
+    }
+
+    .contact-us .card{
+        width: 70%;
+        padding: 17px 0px;
+    }
+ }
+
+ @media(max-width: 469px){
+    .navbar .container ul li{
+        padding: 0px 7px 3px;
+    }
+
+    .carosol h1{
+        font-size: 28px;
+        margin: 9px;
+    }
+ }
+
+ .footer{
+    background: black;
+    padding: 10px 0px;
+ }
+
+ .footer-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+
+ .footer .footer-main p{
+    font-size: 14px;
+ }
+ .footer .footer-main .col-1{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .footer .footer-main .col-1 a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+ }
+
+ .footer .footer-main .col-1 a:hover{
+    color: lightgrey;
+ }
+ @media(max-width: 421px){
+    .navbar .container ul li{
+        padding: 0px 4px 3px;
+    }
+    .carosol h1{
+        font-size: 24px;
+    }
+    .carosol p{
+        font-size: 14px;
+    }
+    .about-us .about .col-2 h2{
+        font-size: 22px;
+    }
+    .about-us .about{
+        grid-template-columns: 48% 48%
+    }
+    .contact-us .card{
+        width: 80%;
+    }
+    .service .service-section h2{
+        font-size: 22px;
+    }
+    .service-section h3{
+        font-size: 18px;
+    }
+    .contact-us h2{
+        font-size: 22px;
+    }
+}
+
+ @media(max-width: 399px){
+    .navbar .container{
+        padding: 0px;
+    }
+
+    .navbar .container ul li{
+        padding: 0px 9px 3px;
+    }
+
+    .carosol h1{
+        font-size: 24px;
+        margin: 9px;
+    }
+
+    .carosol-item{
+        top: 30%;
+    }
+
+    .carosol p{
+        font-size: 14px;
+    }
+
+    .about-us .about .col-2 h2{
+        font-size: 22px;
+    }
+
+    .about-us .about .col-2 p{
+        font-size: 14px;
+    }
+
+    .about-us .about{
+        grid-template-columns: 50% 45%;
+        gap: 5%;
+    }
+
+    .about-us .about .col-1{
+        height: 271px
+    }
+
+    .service .service-section .service-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,245px);
+    }
+
+    .service .service-section .service-grid h3{
+        padding-top: 70%;
+    }
+
+    .footer-main{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .footer .footer-main .col-1 a{
+        padding: 2px 0px;
+    }
+ }
